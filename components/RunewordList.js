@@ -5,7 +5,7 @@ export default function RunewordList(props) {
   return (
     <Fragment>
       {props.runes.map((runeword) => (
-        <RunewordListItem runeword={runeword} />
+        <RunewordListItem runeword={runeword} key={runeword.id} />
       ))}{' '}
     </Fragment>
   )

@@ -2,8 +2,8 @@ import { Fragment } from 'react'
 import RunewordList from '../components/RunewordList'
 import Head from 'next/head'
 const RUNEWORDS = [
-  { name: 'Smite', type: 'shield' },
-  { name: 'Dodge', type: 'armor' },
+  { id: '1', name: 'Smite', type: 'shield' },
+  { id: '2', name: 'Dodge', type: 'armor' },
 ]
 
 export default function Home() {
