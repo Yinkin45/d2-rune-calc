@@ -1,7 +1,7 @@
 export default function GreetingsPage () {
    return (
        <div>
-          "Greetings m'lord"
+          Greetings m'lord
        </div>
    )
 }
