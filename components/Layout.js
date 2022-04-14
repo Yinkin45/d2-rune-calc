@@ -1,5 +1,6 @@
 import NavigationBar from './NavigationBar'
 import Head from 'next/head'
+import styles from './Layout.module.css'
 
 export default function Layout({ children }) {
   return (
@@ -9,7 +10,7 @@ export default function Layout({ children }) {
         <meta name="description" content="Runeword Calculator for Diablo 2" />
       </Head>
       <NavigationBar />
-      {children}
+      <div className={styles.content}>{children}</div>
     </>
   )
 }
