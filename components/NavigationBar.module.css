@@ -1,0 +1,15 @@
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 4px;
+    background: #2a2727;
+}
+
+.link {
+    font-family: Arial, serif;
+    font-size: 14pt;
+    color: #c32b08;
+    margin: 20px 40px;
+    padding: 8px 8px;
+}
