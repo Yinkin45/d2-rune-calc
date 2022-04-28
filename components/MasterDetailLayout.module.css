@@ -1,0 +1,18 @@
+.master {
+    background: black;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.detail {
+    background: black;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+
+}

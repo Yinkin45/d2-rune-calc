@@ -1,0 +1,18 @@
+.item {
+    list-style-type: none;
+    margin: 4px 2px;
+}
+
+.name {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 4px 4px;
+}
+.type {
+    margin: 2px 2px;
+}
+.level {
+    font-style: italic;
+    margin: 2px 2px;
+
+}
