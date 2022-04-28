@@ -10,7 +10,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+h1 {
+  color:white;
+}
+p {
+  color:white;
+}
+li {
+  color:white;
+}
 
 * {
   box-sizing: border-box;
 }
+
