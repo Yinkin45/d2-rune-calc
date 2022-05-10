@@ -8,6 +8,10 @@
     font-weight: bold;
     margin: 4px 4px;
 }
+.name:hover {
+    text-decoration: underline;
+    color:gold;
+}
 .type {
     margin: 2px 2px;
 }
