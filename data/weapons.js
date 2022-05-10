@@ -4,6 +4,8 @@ const WEAPONS_RUNEWORDS = [
     type: 'Weapon',
     subType: 'Sword',
     minLevel: 50,
+    imageUrl: '/images/great_sword.png',
+    modifiers: [],
   },
 ]
 
