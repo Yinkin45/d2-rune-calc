@@ -1,6 +1,6 @@
 import MasterDetailLayout from '../components/MasterDetailLayout'
 import RunewordList from '../components/RunewordList'
-import ALL_RUNEWORDS from '../data/runewords'
+import ALL_RUNEWORDS from '../data'
 
 export default function Runewords() {
   return (
