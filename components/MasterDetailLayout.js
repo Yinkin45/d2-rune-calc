@@ -4,7 +4,7 @@ export default function MasterDetailLayout({ children }) {
   return (
     <div>
       {children.map((child, index) => (
-        <div key={index} className={getClassForIndex(index)}>
+        <div className={getClassForIndex(index)} key={index}>
           {child}
         </div>
       ))}
