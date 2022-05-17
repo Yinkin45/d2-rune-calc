@@ -3,6 +3,7 @@ const ARMOR_RUNEWORDS = [
     name: 'Enigma',
     type: 'Armor',
     minLevel: 65,
+    runes: ['jah', 'ith', 'ber'],
     imageUrl: '/images/field_plate.png',
     modifiers: [
       { text: '+750-775 Defense' },
@@ -16,6 +17,22 @@ const ARMOR_RUNEWORDS = [
       {
         text: '+ (1 Per Character Level) +1-99% Better Chance of Getting Magic Items (Based On Character Level)',
       },
+    ],
+  },
+  {
+    name: 'Bone',
+    type: 'Armor',
+    minLevel: 47,
+    runes: ['sol', 'um', 'um'],
+    imageUrl: '/images/field_plate.png',
+    modifiers: [
+      { text: '15% Chance to cast level 10 Bone Armor' },
+      { text: '15% Chance to cast level 10 Bone Spear on Striking' },
+      { text: '+2 To Necromancer Skill Levels' },
+      { text: '+50–150 To Mana' },
+      { text: 'Increase Maximum Life by 5%' },
+      { text: 'All Resistances +30' },
+      { text: 'Damage Reduced By 7' },
     ],
   },
 ]
