@@ -2,9 +2,9 @@ import styles from './RunewordListItem.module.css'
 import slugify from 'slugify'
 import Link from 'next/link'
 
-export default function RunewordListItem({ key, runeword }) {
+export default function RunewordListItem({ runeword }) {
   return (
-    <li key={key} className={styles.item}>
+    <li className={styles.item}>
       <Link href={`/runewords/${slugify(runeword.name.toLowerCase())}`}>
         <a className={styles.name}>{runeword.name}</a>
       </Link>
