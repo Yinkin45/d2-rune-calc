@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import slugify from 'slugify'
 import MasterDetailLayout from '../../components/MasterDetailLayout'
-import RunewordList from '../../components/RunewordList'
 import RunewordCard from '../../components/RunewordCard'
+import SearchableRunewordList from '../../components/SearchableRunewordList'
 import ALL_RUNEWORDS from '../../data'
 
 export default function Runewords() {
@@ -17,8 +17,7 @@ export default function Runewords() {
     <>
       <MasterDetailLayout>
         <div>
-          <h1>Runeword List</h1>
-          <RunewordList runewords={ALL_RUNEWORDS} />
+          <SearchableRunewordList />
         </div>
         <div>
           <h1>Runeword Detail</h1>
