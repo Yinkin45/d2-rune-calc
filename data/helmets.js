@@ -1,7 +1,9 @@
+import { ITEM_TYPES } from './types'
+
 const HELMETS_RUNEWORDS = [
   {
     name: 'Lore',
-    types: ['Helmet'],
+    types: [ITEM_TYPES.HELMET],
     minLevel: 27,
     runes: ['ort', 'sol'],
     imageUrl: '/images/field_plate.png',
@@ -16,7 +18,7 @@ const HELMETS_RUNEWORDS = [
   },
   {
     name: 'Nadir',
-    types: ['Helmet'],
+    types: [ITEM_TYPES.HELMET],
     minLevel: 13,
     runes: ['nef', 'tir'],
     imageUrl: '/images/field_plate.png',

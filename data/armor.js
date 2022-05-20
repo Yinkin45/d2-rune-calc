@@ -1,9 +1,9 @@
-import Weapons from './weapons'
+import { ITEM_TYPES } from './types'
 
 const ARMOR_RUNEWORDS = [
   {
     name: 'Enigma',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 65,
     runes: ['jah', 'ith', 'ber'],
     imageUrl: '/images/field_plate.png',
@@ -23,7 +23,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Bone',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 47,
     runes: ['sol', 'um', 'um'],
     imageUrl: '/images/field_plate.png',
@@ -39,7 +39,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Bramble',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 61,
     runes: ['ral', 'ohm', 'sur', 'eth'],
     imageUrl: '/images/field_plate.png',
@@ -59,7 +59,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Chains of Honor',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 63,
     runes: ['dol', 'um', 'ber', 'ist'],
     imageUrl: '/images/field_plate.png',
@@ -78,7 +78,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Dragon',
-    types: ['Armor', 'Shield'],
+    types: [ITEM_TYPES.ARMOR, ITEM_TYPES.SHIELD],
     minLevel: 61,
     runes: ['sur', 'lo', 'sol'],
     imageUrl: '/images/field_plate.png',
@@ -101,7 +101,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Duress',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 47,
     runes: ['shael', 'um', 'thul'],
     imageUrl: '/images/field_plate.png',
@@ -121,7 +121,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Enlightenment',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 45,
     runes: ['pul', 'ral', 'sol'],
     imageUrl: '/images/field_plate.png',
@@ -137,7 +137,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Fortitude',
-    types: ['Armor', 'Weapon'],
+    types: [ITEM_TYPES.ARMOR, ITEM_TYPES.WEAPON],
     minLevel: 59,
     runes: ['el', 'sol', 'dol', 'lo'],
     imageUrl: '/images/field_plate.png',
@@ -167,7 +167,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Gloom',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 47,
     runes: ['fal', 'um', 'pul'],
     imageUrl: '/images/field_plate.png',
@@ -184,7 +184,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Lionheart',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 41,
     runes: ['hel', 'lum', 'fal'],
     imageUrl: '/images/field_plate.png',
@@ -201,7 +201,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Myth',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 25,
     runes: ['hel', 'amn', 'nef'],
     imageUrl: '/images/field_plate.png',
@@ -217,7 +217,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Peace',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 29,
     runes: ['shael', 'thul', 'amn'],
     imageUrl: '/images/field_plate.png',
@@ -233,7 +233,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Principle',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 55,
     runes: ['ral', 'gul', 'eld'],
     imageUrl: '/images/field_plate.png',
@@ -249,7 +249,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Prudence',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 49,
     runes: ['mal', 'tir'],
     imageUrl: '/images/field_plate.png',
@@ -266,7 +266,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Rain',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 49,
     runes: ['ort', 'mal', 'ith'],
     imageUrl: '/images/field_plate.png',
@@ -283,7 +283,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Smoke',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 37,
     runes: ['nef', 'lum'],
     imageUrl: '/images/field_plate.png',
@@ -300,7 +300,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Stealth',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 17,
     runes: ['tal', 'eth'],
     imageUrl: '/images/field_plate.png',
@@ -317,7 +317,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Stone',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 47,
     runes: ['shael', 'um', 'pul', 'lum'],
     imageUrl: '/images/field_plate.png',
@@ -335,7 +335,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Treachery',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 43,
     runes: ['shael', 'thul', 'lem'],
     imageUrl: '/images/field_plate.png',
@@ -353,7 +353,7 @@ const ARMOR_RUNEWORDS = [
   },
   {
     name: 'Wealth',
-    types: ['Armor'],
+    types: [ITEM_TYPES.ARMOR],
     minLevel: 43,
     runes: ['lem', 'ko', 'tir'],
     imageUrl: '/images/field_plate.png',

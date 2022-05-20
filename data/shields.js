@@ -1,7 +1,9 @@
+import { ITEM_TYPES } from './types'
+
 const SHIELDS_RUNEWORDS = [
   {
     name: "Ancient's Pledge",
-    types: ['Shield'],
+    types: [ITEM_TYPES.SHIELD],
     minLevel: 21,
     runes: ['ral', 'ort', 'tal'],
     imageUrl: '/images/field_plate.png',
@@ -16,7 +18,7 @@ const SHIELDS_RUNEWORDS = [
   },
   {
     name: 'Splendor',
-    types: ['Shield'],
+    types: [ITEM_TYPES.SHIELD],
     minLevel: 37,
     runes: ['eth', 'lum'],
     imageUrl: '/images/field_plate.png',
