@@ -1,7 +1,7 @@
 const SHIELDS_RUNEWORDS = [
   {
     name: "Ancient's Pledge",
-    type: 'Shield',
+    types: ['Shield'],
     minLevel: 21,
     runes: ['ral', 'ort', 'tal'],
     imageUrl: '/images/field_plate.png',
@@ -16,7 +16,7 @@ const SHIELDS_RUNEWORDS = [
   },
   {
     name: 'Splendor',
-    type: 'Shield',
+    types: ['Shield'],
     minLevel: 37,
     runes: ['eth', 'lum'],
     imageUrl: '/images/field_plate.png',

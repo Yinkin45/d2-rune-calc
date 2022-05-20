@@ -8,10 +8,12 @@ export default function RunewordListItem({ runeword }) {
       <Link href={`/runewords/${slugify(runeword.name.toLowerCase())}`}>
         <a className={styles.name}>{runeword.name}</a>
       </Link>
-      <span className={styles.type}>{runeword.type}</span>
+      <span className={styles.types}>{runeword.types.join(', ')}</span>
       <span className={styles.level}>min level: {runeword.minLevel}</span>
-      {runeword.subType ? (
-        <span className={styles.subType}>subType: {runeword.subType}</span>
+      {runeword.subTypes ? (
+        <span className={styles.subTypes}>
+          subType: {runeword.subTypes.join(', ')}
+        </span>
       ) : null}
     </li>
   )

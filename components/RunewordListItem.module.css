@@ -12,7 +12,7 @@
     text-decoration: underline;
     color:gold;
 }
-.type {
+.types {
     margin: 2px 2px;
 }
 .level {
@@ -20,7 +20,7 @@
     margin: 2px 2px;
 
 }
-.subType {
+.subTypes {
     font-style: italic;
     margin: 2px 2px;
 }

@@ -1,7 +1,7 @@
 const WEAPONS_RUNEWORDS = [
   {
     name: 'Breath of the Dying',
-    type: 'Weapon',
+    types: ['Weapon'],
     subTypes: ['any'],
     minLevel: 69,
     runes: ['vex', 'hel', 'el', 'eld', 'zod', 'eth'],
@@ -27,8 +27,8 @@ const WEAPONS_RUNEWORDS = [
   },
   {
     name: 'Beast',
-    type: 'Weapon',
-    subTypes: ['axe', 'scepter', 'hammer'],
+    types: ['Weapon'],
+    subTypes: ['Axe', 'Scepter', 'Hammer'],
     minLevel: 69,
     runes: ['vex', 'hel', 'el', 'eld', 'zod', 'eth'],
     imageUrl: '/images/great_sword.png',
