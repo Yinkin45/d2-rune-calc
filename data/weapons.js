@@ -1,8 +1,10 @@
+import { ITEM_SUBTYPES, ITEM_TYPES } from './types'
+
 const WEAPONS_RUNEWORDS = [
   {
     name: 'Breath of the Dying',
-    types: ['Weapon'],
-    subTypes: ['any'],
+    types: [ITEM_TYPES.WEAPON],
+    subTypes: [...Object.values(ITEM_SUBTYPES)],
     minLevel: 69,
     runes: ['vex', 'hel', 'el', 'eld', 'zod', 'eth'],
     imageUrl: '/images/great_sword.png',
@@ -27,8 +29,8 @@ const WEAPONS_RUNEWORDS = [
   },
   {
     name: 'Beast',
-    types: ['Weapon'],
-    subTypes: ['Axe', 'Scepter', 'Hammer'],
+    types: [ITEM_TYPES.WEAPON],
+    subTypes: [ITEM_SUBTYPES.AXE, ITEM_SUBTYPES.SCEPTER, ITEM_SUBTYPES.HAMMER],
     minLevel: 69,
     runes: ['vex', 'hel', 'el', 'eld', 'zod', 'eth'],
     imageUrl: '/images/great_sword.png',

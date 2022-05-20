@@ -11,12 +11,7 @@ export default function RunewordCard({ runeword }) {
       <h3 className={styles.types}>{runeword.types.join(', ')}</h3>
       <h3 className={styles.subTypes}>{runeword.subTypes?.join(', ')}</h3>
       <div className={styles.image}>
-        <Image
-          src={runeword.imageUrl}
-          alt={runeword.name}
-          width={250}
-          height={250}
-        />
+        <Image src={runeword.imageUrl} alt={runeword.name} width={250} height={250} />
       </div>
       {runeword.modifiers.map((modifier, index) => {
         return (

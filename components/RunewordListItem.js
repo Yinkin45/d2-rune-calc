@@ -11,9 +11,7 @@ export default function RunewordListItem({ runeword }) {
       <span className={styles.types}>{runeword.types.join(', ')}</span>
       <span className={styles.level}>min level: {runeword.minLevel}</span>
       {runeword.subTypes ? (
-        <span className={styles.subTypes}>
-          subType: {runeword.subTypes.join(', ')}
-        </span>
+        <span className={styles.subTypes}>subType: {runeword.subTypes.join(', ')}</span>
       ) : null}
     </li>
   )

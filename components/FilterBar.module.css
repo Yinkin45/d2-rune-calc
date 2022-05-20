@@ -1,0 +1,23 @@
+.filterBar {
+    text-align: left;
+    margin: 20px;
+    padding: 0;
+    width: auto;
+    height: 80px;
+    background: black;
+}
+.header {
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 2px;
+    padding: 2px;
+    color: red;
+
+}
+.types {
+    color: white;
+    font-size: 12pt;
+    padding: 2px;
+    margin: 2px;
+
+}

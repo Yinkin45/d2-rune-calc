@@ -5,9 +5,9 @@ export default function Home() {
     <>
       <h1>Introduction</h1>
       <p>
-        Greetings Diablo 2 fans, I created this app to help players calculate
-        runes, help decide players which runewords are best for their
-        characters, and to provide information on runewords
+        Greetings Diablo 2 fans, I created this app to help players calculate runes, help decide
+        players which runewords are best for their characters, and to provide information on
+        runewords
       </p>
       <h1>What&#39;s New</h1>
       <ul>

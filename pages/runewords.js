@@ -1,12 +1,12 @@
 import MasterDetailLayout from '../components/MasterDetailLayout'
-import SearchableRunewordList from '../components/SearchableRunewordList'
+import FilterableRunewordList from '../components/FilterableRunewordList'
 
 export default function Runewords() {
   return (
     <>
       <MasterDetailLayout>
         <div>
-          <SearchableRunewordList />
+          <FilterableRunewordList />
         </div>
         <div>
           <h1>Runeword Detail</h1>
