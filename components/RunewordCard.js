@@ -8,8 +8,8 @@ export default function RunewordCard({ runeword }) {
   return (
     <>
       <h1>{runeword.name}</h1>
-      <h3 className={styles.type}>{runeword.type}</h3>
-      <h3 className={styles.subType}>{runeword.subType}</h3>
+      <h3 className={styles.types}>{runeword.types.join(', ')}</h3>
+      <h3 className={styles.subTypes}>{runeword.subTypes?.join(', ')}</h3>
       <div className={styles.image}>
         <Image
           src={runeword.imageUrl}
@@ -20,11 +20,20 @@ export default function RunewordCard({ runeword }) {
       </div>
       {runeword.modifiers.map((modifier, index) => {
         return (
-          <div className={styles.modifier} key={index}>
+          <div className={getClassForModifier(modifier)} key={index}>
             {modifier.text}
           </div>
         )
       })}
     </>
   )
+}
+
+function getClassForModifier(modifier) {
+  switch (modifier.style) {
+    case 'header':
+      return styles.modifierHeader
+    default:
+      return styles.modifier
+  }
 }

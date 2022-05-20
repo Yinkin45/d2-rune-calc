@@ -1,7 +1,7 @@
 const HELMETS_RUNEWORDS = [
   {
     name: 'Lore',
-    type: 'Helmet',
+    types: ['Helmet'],
     minLevel: 27,
     runes: ['ort', 'sol'],
     imageUrl: '/images/field_plate.png',
@@ -16,7 +16,7 @@ const HELMETS_RUNEWORDS = [
   },
   {
     name: 'Nadir',
-    type: 'Helmet',
+    types: ['Helmet'],
     minLevel: 13,
     runes: ['nef', 'tir'],
     imageUrl: '/images/field_plate.png',

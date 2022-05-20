@@ -1,7 +1,7 @@
-.type{
+.types{
     color: white;
 }
-.subType{
+.subTypes{
     color:white;
 }
 .image{
@@ -11,4 +11,8 @@
 }
 .modifier{
     color:cadetblue;
+}
+.modifierHeader{
+    color: cadetblue;
+    font-weight: bold;
 }
