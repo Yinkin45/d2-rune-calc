@@ -3,6 +3,8 @@ import { useState } from 'react'
 export default function useTypeFilters() {
   const [typeFilters, setTypeFilters] = useState([])
 
+  const hasTypeFilter = (type) => typeFilters.includes(type)
+
   const addTypeFilter = (typeToAdd) => {
     setTypeFilters([typeToAdd, ...typeFilters])
   }
@@ -14,6 +16,7 @@ export default function useTypeFilters() {
       })
     )
   }
+
   const toggleTypeFilter = (typeToToggle, isEnabled) => {
     if (isEnabled) {
       addTypeFilter(typeToToggle)
@@ -22,5 +25,14 @@ export default function useTypeFilters() {
     }
   }
 
-  return { typeFilters, addTypeFilter, removeTypeFilter, toggleTypeFilter }
+  const clearTypeFilters = () => setTypeFilters([])
+
+  return {
+    typeFilters,
+    hasTypeFilter,
+    addTypeFilter,
+    removeTypeFilter,
+    toggleTypeFilter,
+    clearTypeFilters,
+  }
 }
