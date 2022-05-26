@@ -2,32 +2,32 @@ import { useEffect, useState } from 'react'
 import SearchBar from './SearchBar'
 import FilterBar from './FilterBar'
 import RunewordList from './RunewordList'
+import useTypeFilters from '../hooks/useTypeFilters'
+import useSubTypeFilters from '../hooks/useSubTypeFilters'
 import ALL_RUNEWORDS from '../data'
 
 export default function FilterableRunewordList() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [runewordFilters, setRunewordFilters] = useState({
-    types: [],
-    subTypes: [],
-    minLevel: 0,
-    maxLevel: 99,
-    numOfSockets: [],
-  })
+  const { typeFilters, toggleTypeFilter } = useTypeFilters()
+  const { subTypeFilters, toggleSubTypeFilter } = useSubTypeFilters()
   const [filteredRunewords, setFilteredRunewords] = useState(ALL_RUNEWORDS)
 
   useEffect(() => {
+    console.log(`typeFilters: ${typeFilters}`)
+    console.log(`subTypeFilters ${subTypeFilters}`)
     updateSearchResults()
-  }, [searchTerm, runewordFilters])
+  }, [searchTerm, typeFilters, subTypeFilters])
 
   const updateSearchResults = () => {
     const searchResults = ALL_RUNEWORDS.filter((eachRuneword) => {
       if (!eachRuneword.name.toLowerCase().includes(searchTerm.toLowerCase())) return false
+      if (typeFilters.length > 0 && !hasCommonElement(eachRuneword.types, typeFilters)) return false
       if (
-        runewordFilters.types.length > 0 &&
-        !hasCommonElement(eachRuneword.types, runewordFilters.types)
+        subTypeFilters.length > 0 &&
+        eachRuneword.subTypes &&
+        !hasCommonElement(eachRuneword.subTypes, subTypeFilters)
       )
         return false
-
       return true
     })
     setFilteredRunewords(searchResults)
@@ -36,7 +36,7 @@ export default function FilterableRunewordList() {
   return (
     <div>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <FilterBar runewordFilters={runewordFilters} setRunewordFilters={setRunewordFilters} />
+      <FilterBar toggleTypeFilter={toggleTypeFilter} toggleSubTypeFilter={toggleSubTypeFilter} />
       <RunewordList runewords={filteredRunewords} />
     </div>
   )
