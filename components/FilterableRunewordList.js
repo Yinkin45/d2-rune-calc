@@ -3,30 +3,22 @@ import SearchBar from './SearchBar'
 import FilterBar from './FilterBar'
 import RunewordList from './RunewordList'
 import ALL_RUNEWORDS from '../data'
+import useTypeFilters from '../hooks/useTypeFilters'
 
 export default function FilterableRunewordList() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [runewordFilters, setRunewordFilters] = useState({
-    types: [],
-    subTypes: [],
-    minLevel: 0,
-    maxLevel: 99,
-    numOfSockets: [],
-  })
+  const { typeFilters, toggleTypeFilter } = useTypeFilters()
+
   const [filteredRunewords, setFilteredRunewords] = useState(ALL_RUNEWORDS)
 
   useEffect(() => {
     updateSearchResults()
-  }, [searchTerm, runewordFilters])
+  }, [searchTerm, typeFilters])
 
   const updateSearchResults = () => {
     const searchResults = ALL_RUNEWORDS.filter((eachRuneword) => {
       if (!eachRuneword.name.toLowerCase().includes(searchTerm.toLowerCase())) return false
-      if (
-        runewordFilters.types.length > 0 &&
-        !hasCommonElement(eachRuneword.types, runewordFilters.types)
-      )
-        return false
+      if (typeFilters.length > 0 && !hasCommonElement(eachRuneword.types, typeFilters)) return false
 
       return true
     })
@@ -36,7 +28,7 @@ export default function FilterableRunewordList() {
   return (
     <div>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <FilterBar runewordFilters={runewordFilters} setRunewordFilters={setRunewordFilters} />
+      <FilterBar toggleTypeFilter={toggleTypeFilter} />
       <RunewordList runewords={filteredRunewords} />
     </div>
   )

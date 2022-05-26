@@ -1,18 +1,7 @@
 import styles from './FilterBar.module.css'
 import { ITEM_TYPES } from '../data/types'
 
-export default function FilterBar({ runewordFilters, setRunewordFilters }) {
-  const toggleTypeFilter = (itemType, isEnabled) => {
-    const newTypes = isEnabled
-      ? [...runewordFilters.types, itemType]
-      : runewordFilters.types.filter((eachType) => eachType !== itemType)
-
-    setRunewordFilters({
-      ...runewordFilters,
-      types: newTypes,
-    })
-  }
-
+export default function FilterBar({ toggleTypeFilter }) {
   return (
     <div className={styles.filterBar}>
       <div className={styles.header}>Type</div>
